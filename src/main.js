@@ -65,16 +65,7 @@
       // first tag of every comment
       commentTags: "td.comments > div.tagbox > span:nth-child(1)"
     };
-    /* Generates new query object */
-    priv.newQuery = function(university, campus, name) {
-      university = typeof university === "undefined" ? "" : university;
-      campus = typeof campus === "undefined" ? "" : campus;
-      return {
-        university: university,
-        campus: campus,
-        name: name
-      };
-    };
+    
     /* Combines all properties of a string */
     priv.combine = function(options) {
       var query = "";
